@@ -1,0 +1,11 @@
+<div>
+    <span>{{current.city}}, {{current.country}}</span>
+    <span>{{current.date | date:'fullDate'}}</span>
+</div>
+<div>
+    <img [src]='current.image' width="100px" height="100px">
+    <span>{{current.temperature | number:'1.0-0'}}°F</span> <!--TODO make degree symbol part of the setting-->
+</div>
+<div>
+    {{current.description}}
+</div>
